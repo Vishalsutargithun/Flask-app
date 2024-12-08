@@ -6,7 +6,7 @@
 
 "api/flask-function.py": {
 
-"runtime": "@vercel/python@latest"
+"runtime": "@vercel/python"
 
 }
 
