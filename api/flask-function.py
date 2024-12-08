@@ -1,15 +1,10 @@
-from flask import Flask, request
-
-from vercel import Vercel
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello():
+@app.route("/")
+def home():
+    return jsonify({"message": "Hello, Vercel!"})
 
-return 'Hello, World!'
-
-if __name__ == '__main__':
-
-app.run()
-
+if __name__ == "__main__":
+    app.run()
